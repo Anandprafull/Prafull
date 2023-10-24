@@ -9,7 +9,7 @@ body {
 /* Styles for the top section */
 h1 {
   font-family: 'Young Serif', serif;
-  font-size: 700%;
+  font-size: 2rem;
   font-weight: normal;
   margin-top: 3.125rem;
   margin-bottom: 0;
@@ -55,7 +55,7 @@ hr {
 /* Styles for the top container */
 .top-container {
   position: relative;
-  padding-top: 6.25rem;
+  padding-top: 10%;
   background-color: rgb(224, 235, 232);
   width:100%;
 }
@@ -240,6 +240,7 @@ copyright {
   .top-container {
     margin-top: 10vh;
     height: 1100px;
+    padding-top:5%;
   }
 
   .mountain {
