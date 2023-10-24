@@ -209,6 +209,7 @@ copyright {
 }
 
 /* Media query for smaller screens */
+/* Media query for smaller screens */
 @media screen and (max-width: 980px) {
   hr {
     border: dotted #EAF6F6;
@@ -219,37 +220,31 @@ copyright {
   }
 
   p {
-    margin-left: 2rem;
-    margin-right: 2rem;
+    margin: 0 2rem; /* Adjust margin on all sides */
   }
 
   .name-container {
     margin-top: 40%;
-    margin-bottom: 0px;
+    margin-bottom: 0;
     line-height: 5.8rem;
   }
 
   .name {
-    font-size: 1000%;
+    font-size: 500%; /* Adjust font size as needed */
   }
 
   .name-description {
-    font-size: 300%;
+    font-size: 200%; /* Adjust font size as needed */
   }
 
   .top-container {
     margin-top: 10vh;
-    height: 1100px;
-    padding-top:5%;
+    height: auto; /* Allow height to adapt */
+    padding-top: 5%;
   }
 
   .mountain {
-    position: absolute;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    margin: 0 auto;
-    width: 100%;
+    width: 100%; /* Width 100% to fill the container */
   }
 
   .profile-img {
@@ -289,3 +284,4 @@ copyright {
     padding: 1.3rem 1.5rem 1rem;
   }
 }
+
