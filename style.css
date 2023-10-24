@@ -1,9 +1,4 @@
-/*
-font-family: 'Josefin Slab', serif; <p>
-font-family: 'Merriweather', serif;
-font-family: 'Montserrat', sans-serif;
-font-family: 'Sacramento', cursive; <h1>
-*/
+/* Resetting some default styles */
 body {
   margin: 0;
   text-align: center;
@@ -11,26 +6,28 @@ body {
   font-size: 100%;
 }
 
+/* Styles for the top section */
 h1 {
   font-family: 'Young Serif', serif;
   font-size: 700%;
-  /*font-size: 562.5%;       /* 100% = 16px; 90px = { (90/16) * 100 }% ; */
   font-weight: normal;
   margin-top: 3.125rem;
   margin-bottom: 0;
   line-height: 5.8rem;
-  /* This should actually be an integer, and without any units. But I want it to be mobile compatible. */
   color: #ec8333;
 }
 
-h2 {
+/* Common styles for h2 and h3 */
+h2, h3 {
   font-family: 'Montserrat', sans-serif;
+}
+
+h2 {
   color: #1E836C;
   padding-bottom: 0.6rem;
 }
 
 h3 {
-  font-family: 'Montserrat', sans-serif;
   color: #45B29A;
 }
 
@@ -46,6 +43,7 @@ p {
   line-height: 2;
 }
 
+/* Styling the hr element */
 hr {
   border: dotted #EAF6F6;
   border-bottom: none;
@@ -54,6 +52,7 @@ hr {
   margin: 6.25rem auto;
 }
 
+/* Styles for the top container */
 .top-container {
   position: relative;
   padding-top: 6.25rem;
@@ -63,7 +62,6 @@ hr {
 .name-description {
   font-family: 'Josefin Slab', serif;
   font-size: 1.4rem;
-  /* 2.5rem = 40px; */
   font-weight: bold;
   color: #45b29a;
 }
@@ -71,11 +69,10 @@ hr {
 .top-cloud {
   position: absolute;
   right: 14rem;
-  /* margin-right: 300px; */
   top: 7rem;
 }
 
-.bottom-cloud {
+bottom-cloud {
   position: absolute;
   left: 15rem;
   bottom: 22rem;
@@ -87,6 +84,7 @@ hr {
   bottom: -4px;
 }
 
+/* Styles for the middle container */
 .middle-container {
   margin: 100px 0;
 }
@@ -94,65 +92,42 @@ hr {
 .profile-img {
   width: 15%;
 }
-#about-me{
-  margin:auto;
-}
-.namename{
-  color:#45b29a;
-}
-.intro {
-  width: 50%;
+
+#about-me {
   margin: auto;
 }
 
-.computer-img {
-  width: 25%;
-  float: left;
-  margin-right: 30px;
-  border-radius: 100%;
-}
-
-.skill-row {
-  width: 50%;
-  margin: 6.25rem auto 6.25rem auto;
-  text-align: left;
-}
-.skill-row2 {
-  width: 50%;
-  margin: 6.25rem auto 6.25rem auto;
-  text-align: left;
-}
-.chillies-img {
-  width: 25%;
-  float: right;
-  margin-left: 30px;
-}
+/* Styles for the skill rows */
+.computer-img,
+.chillies-img,
 .chillies2-img {
   width: 25%;
-  float: right;
-  margin-left: 30px;
-  
+  border-radius: 100%;
+  float: left;
+  margin-right: 30px;
 }
 
+.skill-row,
+.skill-row2 {
+  width: 50%;
+  margin: 6.25rem auto;
+  text-align: left;
+}
+
+/* Styles for the projects section */
 .projects-section {
   text-align: center;
   padding: 10rem 2rem;
-  background: var(--main-blue);
+  background: #45b29a; /* Retained color */
 }
 
 .projects-section-header {
   max-width: 640px;
   margin: 0 auto 6rem auto;
-  border-bottom: 0.2rem solid var(--main-white);
+  border-bottom: 0.2rem solid #ecf0f1; /* Retained color */
 }
 
-@media (max-width: 28.75em) {
-  .projects-section-header {
-    font-size: 4rem;
-  }
-}
-
-
+/* Styles for the projects grid */
 .projects-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
@@ -163,24 +138,14 @@ hr {
   margin-bottom: 6rem;
 }
 
-@media (max-width: 30.625em) {
-  .projects-section {
-    padding: 6rem 1rem;
-  }
-
-  .projects-grid {
-    grid-template-columns: 1fr;
-  }
-}
-
 .project {
-  background: var(--main-gray);
+  background: #ecf0f1; /* Retained color */
   box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
   border-radius: 2px;
 }
 
 .code {
-  color: var(--main-gray);
+  color: #ecf0f1; /* Retained color */
   transition: color 0.3s ease-out;
 }
 
@@ -189,7 +154,7 @@ hr {
 }
 
 .project-image {
-  height: calc(100% - 6.8rem);
+  height: calc(98% - 6.8rem);
   width: 100%;
   object-fit: cover;
 }
@@ -198,10 +163,13 @@ hr {
   font-size: 2rem;
   padding: 2rem 0.5rem;
 }
-
-.bottom-container {
-  background-color: rgb(224, 235, 232);
-  padding: 3.125rem 0 1.25rem;
+.btn-show-all{
+  font-family: 'Josefin Slab', serif;
+  font-size: 1.125rem;
+}
+/* Styles for the contact section */
+.contact-me {
+  padding: 4rem 0;
 }
 
 .contact-message {
@@ -209,16 +177,9 @@ hr {
   margin: 2.5rem auto 3.75rem;
 }
 
-.btn-message, .call-button {
+.btn-message,
+.call-button {
   background: #45B29A;
-  background-image: -webkit-linear-gradient(top, #45B29A, #45B29A);
-  background-image: -moz-linear-gradient(top, #45B29A, #45B29A);
-  background-image: -ms-linear-gradient(top, #45B29A, #45B29A);
-  background-image: -o-linear-gradient(top, #45B29A, #45B29A);
-  background-image: -webkit-gradient(to bottom, #45B29A, #45B29A);
-  -webkit-border-radius: 8px;
-  -moz-border-radius: 8px;
-  border-radius: 4px;
   color: #1B7F69;
   font-family: 'Josefin Slab', serif;
   font-size: 1.125rem;
@@ -234,42 +195,17 @@ hr {
   opacity: 0.8;
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+/* Styles for the footer */
 .footer-link {
-  margin: 0.625rem 1.250rem;
+  margin: 0.625rem 1.25rem;
 }
 
-.footer-link:hover {
-  /*  color: #EAF6F6; */
-}
-
-.copyright {
+copyright {
   font-size: 75%;
-  padding: 1.250rem 0;
+  padding: 1.25rem 0;
 }
 
+/* Media query for smaller screens */
 @media screen and (max-width: 980px) {
   hr {
     border: dotted #EAF6F6;
@@ -279,21 +215,22 @@ hr {
     margin: 6.25rem auto;
   }
 
-  p{
+  p {
     margin-left: 2rem;
     margin-right: 2rem;
   }
 
-  .name-container{
+  .name-container {
     margin-top: 40%;
     margin-bottom: 0px;
     line-height: 5.8rem;
   }
 
-  .name{
+  .name {
     font-size: 1000%;
   }
-  .name-description{
+
+  .name-description {
     font-size: 300%;
   }
 
@@ -328,7 +265,7 @@ hr {
 
   .skill-row {
     width: 100%;
-    margin: 6.25rem auto 6.25rem auto;
+    margin: 6.25rem auto;
     text-align: center;
   }
 
@@ -347,26 +284,4 @@ hr {
     font-size: 3rem;
     padding: 1.3rem 1.5rem 1rem;
   }
-
-/*
-@media screen and (min-width: 480px){
-  .intro {
-    font-size: 250%;
-  }
-
-  h2{
-    font-size: 300%;
-  }
-
-  h3{
-    font-size: 250%;
-  }
-
-  .skill{
-    font-size: 250%;
-  }
-  .contact-message{
-    font-size: 200%;
-  }
 }
-*/
