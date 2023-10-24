@@ -57,6 +57,7 @@ hr {
   position: relative;
   padding-top: 6.25rem;
   background-color: rgb(224, 235, 232);
+  width:100%;
 }
 
 .name-description {
@@ -70,12 +71,14 @@ hr {
   position: absolute;
   right: 14rem;
   top: 7rem;
+  max-width:100%;
 }
 
-bottom-cloud {
+.bottom-cloud {
   position: absolute;
   left: 15rem;
   bottom: 22rem;
+  max-width:100%;
 }
 
 .mountain {
